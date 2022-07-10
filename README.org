@@ -1,0 +1,27 @@
+*watch.el --- watch a file for changes and automatically reload the buffer when changes occur.*
+
+Copyright (C) 2022  Samuel Burns Cohen
+
+*Author:* Samuel Burns Cohen <sbcohen2000@gmail.com>
+*Keywords:* file watching notification reload
+*Version:* 0.0.1
+
+This program is free software; you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with this program.  If not, see <http://www.gnu.org/licenses/>.
+
+*Description*
+This package exposes two interactive functions: ~watch-file~ and
+~unwatch-file~.  ~watch-file~ places a file watch on the file visited
+by the current buffer and reloads the buffer every time a change
+occurs.  ~unwatch-file~ removes the file watch placed by ~watch-file~,
+returning the buffer to normal.
